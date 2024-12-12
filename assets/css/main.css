@@ -1273,10 +1273,20 @@ section,
 }
 
 @media screen and (min-width: 768px) {
-  .product-image {
+  .product-image, .portfolio-item {
     min-height: 300px;
     max-height: 300px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .product-image, .portfolio-item {
+    height: 400px;
+  }
+}
+
+.portfolio-item{
+  position: relative;
 }
 
 .portfolio-content {
